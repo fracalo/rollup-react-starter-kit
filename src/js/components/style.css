@@ -1,0 +1,17 @@
+.counter{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-top: 2em;
+  h2 {
+    color: navy; 
+  }
+  &__val {
+    display: block;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+}
