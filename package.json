@@ -31,15 +31,14 @@
     "rollup-plugin-postcss": "^0.2.0",
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^1.0.1",
-    "rollup-watch": "^3.2.2"
-  },
-  "dependencies": {
     "babel-plugin-external-helpers": "^6.18.0",
     "babel-preset-react": "^6.16.0",
-    "debug": "^2.6.0",
     "eslint-plugin-react": "^6.9.0",
-    "global": "^4.3.1",
     "postcss-modules": "^0.6.3",
+    "rollup-watch": "^3.2.2",
+    "global": "^4.3.1"
+  },
+  "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }

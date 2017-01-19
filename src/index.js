@@ -2,7 +2,7 @@
 import './styles/main.css'
 
 // import react modules
-import './js/components/Counter'
+import './scripts/components/Counter'
 
 /* eslint quotes: "off" , no-constant-condition: "off" */
 // disable quotes rule...

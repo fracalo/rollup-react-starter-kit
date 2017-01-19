@@ -15,9 +15,12 @@ import simplevars from 'postcss-simple-vars'
 import nested from 'postcss-nested'
 import cssnext from 'postcss-cssnext'
 import cssnano from 'cssnano'
-import autoprefixer from 'autoprefixer'
+// import autoprefixer from 'autoprefixer' included in postcss-cssnext
+import postcssModules from 'postcss-modules'
 
 import styleVars from './src/styles/vars.js'
+
+const cssExportMap = {}
 
 const config = {
   entry: 'src/index.js',
@@ -51,14 +54,21 @@ const config = {
     // postcss processing
     postcss({
       plugins: [
+        postcssModules({
+          getJSON (id, exportTokens) {
+            cssExportMap[id] = exportTokens
+          }
+        }),
         simplevars({
           variables: styleVars//TODO fix in case of using var rollup watch doesn't update
         }),
         nested(),
         cssnext({ warnForDuplicates:false }),
         cssnano(),
-        autoprefixer()
       ],
+      getExport (id) {
+        return cssExportMap[id]
+      },
       extensions: ['.css']
     }),
   ]

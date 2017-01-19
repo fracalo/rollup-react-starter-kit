@@ -1,0 +1,10 @@
+
+const stylevars =  {
+ [color-heading]: red,
+ [color-text]: #444,
+ [color-gradient-start]: #efefff,
+ [color-lightest]: #fff,
+ [font-family]: sans-serif,
+}
+
+export default stylevars
