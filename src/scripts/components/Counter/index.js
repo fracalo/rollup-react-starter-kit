@@ -26,8 +26,10 @@ class Counter extends Component{
           className={ `${style.className}__val` }>
             { `${this.state.count}` }
         </span>
-        <Controller handler={(a) => this.subtract(a)} content='-' />
-        <Controller handler={(a) => this.add(a)} content='+' />
+        <div className={ `${style.className}__ctrl-wrapper` }>
+          <Controller handler={(a) => this.subtract(a)} content='-' />
+          <Controller handler={(a) => this.add(a)} content='+' />
+        </div>
       </div>
     )
   }

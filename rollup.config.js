@@ -18,8 +18,11 @@ import cssnano from 'cssnano'
 // import autoprefixer from 'autoprefixer' included in postcss-cssnext
 import postcssModules from 'postcss-modules'
 
-import styleVars from './src/styles/vars.js'
+//import styleVars from './src/styles/vars.js'
 
+import ymlParser from './src/scripts/yml-parser'
+
+// cache for css modules
 const cssExportMap = {}
 
 const config = {
@@ -60,7 +63,8 @@ const config = {
           }
         }),
         simplevars({
-          variables: styleVars//TODO fix in case of using var rollup watch doesn't update
+          variables: ymlParser('./src/styles/vars.yml')
+//TODO fix in case of using var rollup watch doesn't update
         }),
         nested(),
         cssnext({ warnForDuplicates:false }),
@@ -70,7 +74,7 @@ const config = {
         return cssExportMap[id]
       },
       extensions: ['.css']
-    }),
+    })
   ]
 }
 export default config

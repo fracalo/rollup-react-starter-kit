@@ -17,7 +17,11 @@ class Controller extends Component{
   render(){
     return (
       <div className={style.className}>
-        <input type='number' defaultValue={this.state.step} onChange={(e) => { this.changeHandler(e)} }/>
+        <input type='number'
+          className={`${style.className}__input`}
+          defaultValue={this.state.step}
+          onChange={(e) => { this.changeHandler(e)} }
+        />
         <Button
           clickHandler={ () => {this.props.handler(this.state.step)} } 
           content={this.props.content}

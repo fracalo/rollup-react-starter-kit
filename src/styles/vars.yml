@@ -1,0 +1,11 @@
+# yml file for css variable
+# it gets parsed and passed to postcss simple vars
+---
+
+color-heading: navy
+color-text: '#444'
+color-gradient-start: '#efefff'
+color-lightest: '#fff'
+font-family: sans-serif
+
+

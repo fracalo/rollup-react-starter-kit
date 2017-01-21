@@ -1,17 +1,18 @@
-/* Variables */
-/*
-$color-heading: red;
-$color-text: #444;
-$color-gradient-start: #efefff;
-$color-lightest: #fff;
-$font-family: sans-serif;
-*/
 
 /* Simple reset. */
 body,* {
   box-sizing: border-box;
   margin: 0;
 }
+/*jinput[type=number]{
+  background:red;
+  &::-webkit-inner-spin-button
+  &::-webkit-outer-spin-button {
+    -webkit-appearence:none;
+    margin:0
+  }
+}
+*/
 
 body {
   padding: 2rem;
@@ -26,7 +27,7 @@ body {
   background-repeat: no-repeat;
 
   *+* {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   a {

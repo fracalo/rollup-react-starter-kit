@@ -14,13 +14,17 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.6.1",
+    "babel-plugin-external-helpers": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.16.0",
     "cssnano": "^3.10.0",
+    "eslint-plugin-react": "^6.9.0",
     "http-server": "^0.9.0",
     "livereload": "^0.6.0",
     "npm-run-all": "^4.0.0",
     "postcss-cssnext": "^2.9.0",
+    "postcss-modules": "^0.6.3",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
     "rollup": "^0.41.1",
@@ -31,14 +35,10 @@
     "rollup-plugin-postcss": "^0.2.0",
     "rollup-plugin-replace": "^1.1.1",
     "rollup-plugin-uglify": "^1.0.1",
-    "babel-plugin-external-helpers": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "eslint-plugin-react": "^6.9.0",
-    "postcss-modules": "^0.6.3",
-    "rollup-watch": "^3.2.2",
-    "global": "^4.3.1"
+    "rollup-watch": "^3.2.2"
   },
   "dependencies": {
+    "js-yaml": "^3.7.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }
